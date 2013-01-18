@@ -1,0 +1,31 @@
+{% extends 'TpBlogBundle::layout.html.twig' %}
+
+{% block title %} {{parent()}} My cool blog posts {% endblock %}
+
+{% block body %}
+<div id="containeur">
+	<div class="span-16">
+
+	
+    	<div id="content">
+	        <div id="bloc1">
+	        	<h2>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at ero Maecenas. <span class="links">Learn more</span></h2>
+	        </div>
+	        
+	        <div id="separateur-double">
+	        	<hr>
+	        	<hr>
+	        </div>
+	        
+	        {% for post in posts %}
+				{% include 'TpBlogBundle:UI:post.html.twig' with {'post': post} %}
+			{% endfor %}
+	        
+	        
+			    
+			    
+	        </div>
+        </div>
+    </div>
+	
+{% endblock %}

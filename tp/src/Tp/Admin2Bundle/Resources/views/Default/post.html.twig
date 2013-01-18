@@ -1,0 +1,11 @@
+        <tr>
+          <td>{{post.id}}</td>
+          <td><a href="{{ path('tp_blog_article', { 'id': post.id }) }}">{{post.title}}</a></td>
+          <td><a href="{{ path('tp_blog_user', { 'id': post.user.id }) }}">{{post.user.name}}</a></td>
+          <td>{{post.date | date("F jS, Y")}}</td>
+          <td><a href="{{ path('tp_blog_categories', { 'id': post.categories.id }) }}">{{post.categories.title}}</a></td>
+          <td>
+              <a href="{{ path('tp_admin_article_update', { 'id': post.id }) }}"><i class="icon-pencil"></i></a>
+              <a href="{{ path('tp_admin_articles_suppression', { 'id': post.id }) }}" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>
+        </tr>

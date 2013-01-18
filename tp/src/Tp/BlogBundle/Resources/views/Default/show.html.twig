@@ -1,0 +1,35 @@
+{% extends 'TpBlogBundle::layout.html.twig' %}
+
+
+{% block title %} {{parent()}} My cool blog posts {% endblock %}
+
+{% block body %}
+<div id="containeur">
+	<div class="span-16">
+
+	
+    	<div id="content">
+	    		<div  id="back">
+		        	<span><a href="{{ path('tp_blog_homepage') }}">Back</a></span>
+		        </div>
+				<div class="bloc2">
+					<div class="span-4">
+					    <span class="date">{{posts.date|date("Y-M-D")}}</span>
+					</div>
+					<div class="span-12">
+						<h2 class="title-bloc">{{posts.title}}</h2>
+						<p>{{posts.content}}</p>
+						<div class="footerbloc">
+							<p class="footer-bloc"><img src="/images/user.png"/> By <span class="links">John Doe</span> in <span class="links">Web Design</span> with <span class="links">3 comments</span></p>
+							<p class="share"><img src="/images/share.png"/><span class="links">Share</span></p>
+						</div>
+					</div>
+				</div>
+			    <div class="separateur">
+			    	<hr>
+			    </div>
+	        </div>
+        </div>
+    </div>
+	
+{% endblock %}

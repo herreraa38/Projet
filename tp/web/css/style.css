@@ -1,0 +1,340 @@
+body{
+	background-image: url(../images/bg.png);
+font-family: Rockwell;	
+}
+
+p{
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+
+text-transform: uppercase;	
+}
+
+h2{
+	color:#677178;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+a:hover{
+	color:white;
+}
+
+/* 		HEADER		*/
+
+#header{
+	color:white;
+	width:100%;
+	font-size:18px;
+	text-transform: uppercase;
+	padding: 0; 
+	margin: 0;  
+    text-align: center	
+}
+
+#header ul{
+	margin: 0 auto;
+	padding: 0;
+	width:110%
+}
+
+#header li{
+    display: inline;
+	list-style: none;
+	float: left;
+	width: 10%;
+	margin-top: 75px;
+text-shadow: 1px 1px 6px black;
+}
+
+#header li.logo{
+	width: 50%;
+	margin-top:0;	 
+}
+
+
+/*		CONTENT		*/
+
+
+.span-16{
+	background: white;
+	padding: 20px;
+	margin:0;
+}
+
+#content span.links a{
+	color:#AD7361;
+	padding-left: 20px;
+}
+
+.footer-bloc span.links a{
+	color:#AD7361;
+	padding-left: 20px;
+}
+
+span.date{
+	font-style: italic;
+}
+
+/* 		BLOC 1		*/
+
+#content #bloc1 h2{
+	color:#636363;
+}
+
+#back {
+	margin:20px 0;	
+}
+
+#back a{
+	color:#AD7361;	
+}
+
+/* 		DOUBLE SEPARATEUR		*/
+
+#separateur-double{
+	margin: 40px 0;	
+}
+
+#separateur-double hr{
+	padding: 0;
+	margin: 0 0 2px;
+	height: 2px;	
+}
+
+/* 		SIMPLE SEPARATEUR		*/
+
+.separateur{
+	margin: 40px 0;	
+}
+
+.separateur hr{
+	padding: 0;
+	margin: 0 0 2px;
+	height: 2px;	
+}
+
+/* 		BLOC 2		*/
+
+.span-4, .span-12{
+	margin:0;
+	padding: 0;
+}
+
+#content .bloc2{
+	padding-bottom: 30px;
+}
+
+h2.title-bloc{
+	margin-top: -20px;
+}
+
+h2.title-bloc a{
+	margin-top: -20px;
+	color:#677178;
+}
+
+
+#content #bloc2 h2 {
+	color:#677178;
+}
+
+
+div.footerbloc{
+	font-style: italic;
+	margin-bottom: 75px; 
+	margin-top: 20px;
+}
+
+div.footerbloc img{
+	padding-right: 10px; 
+}
+
+p.footer-bloc{
+	float: left;
+}
+
+p.footer-bloc a{
+	color:#AD7361;
+}
+
+p.share{
+	float: right;
+}
+
+p.share img{
+	padding-right: 10px;
+}
+
+
+/* 		PAGINATION		*/
+
+#pagination{
+	overflow: hidden;
+	margin-bottom: 22px;
+}
+
+#list-pages ul li{
+	list-style: none;
+	float: left;
+	padding: 0px 7px;
+	background: #F1F1E9;
+}
+
+#list-pages ul li.select{	
+	background: #AD7361;
+}
+
+
+/*		COLONNE DROITE 		*/
+
+.span-7{
+	margin:0;
+	padding: 0;
+	background: #F1F1E9;
+	display: block;
+}
+
+#col-droite h3 span{
+	text-transform: lowercase;
+}
+
+#col-droite div.bloc-col{
+	padding-bottom: 13px;
+	
+}
+
+/*		SOCIAL		*/
+
+#social{
+	border-bottom: 2px solid rgba(110,110,110,0.11);
+}
+
+#social ul{
+	padding: 15px 0px 30px 30px;
+	margin:0;
+}
+
+#social li{
+	list-style: none;
+	float:left;
+	display: block;	
+	margin-right: 10px;
+}
+
+#social li img{
+margin-right: 10px;
+}
+
+
+/*		SEARCH		*/
+
+#search{
+	border-bottom: 2px solid rgba(110,110,110,0.11);
+}
+
+#search input{
+	margin: 15px 20px;
+	padding: 5px;
+	width: 80%;	
+}
+
+/*		CATEGORIES		*/
+
+#categories{
+	border-bottom: 2px solid rgba(110,110,110,0.11);
+	padding-left: 20px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+#categories ul.list-cat{	
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+#categories li.li-cat{
+	list-style:none; 
+	border-bottom:  2px solid rgba(110,110,110,0.11);
+	padding-top: 3px;
+	margin-right: 15px;
+	float: left;
+	width: 100px;
+	color:#AD7361;
+}
+
+#categories li.li-cat a{
+	color:#AD7361;
+}
+
+
+
+#latest{
+	border-bottom: 2px solid rgba(110,110,110,0.11);
+	padding-left: 20px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+
+#latest ul li.latest-list{
+	list-style: none;
+	border: 1px solid rgba(110, 110, 110, 0.56);
+	width: 50px;
+	height: 50px;
+	background: white;
+	float: left;
+	margin: 5px;
+}
+
+#visit{
+	border-bottom: 2px solid rgba(110,110,110,0.11);
+	padding-left: 20px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+#visit p{
+	font-size: 10px;
+	text-align: center;
+	margin-right: 20px;
+}
+
+#sponsor{
+	background: white;
+	width:100px;
+	height:70px;
+	margin: 10px 55px;
+	
+}
+
+
+
+
+
+
+/*		MIGUEL		*/
+
+#miguel img{
+	padding: 20px
+}
+
+
+
+/*		FOOTER		*/
+
+#footer p{
+margin: 20px auto;
+width: 27%;
+color: white;
+font-size: 14px;
+text-shadow: 1px 1px 6px black;
+}

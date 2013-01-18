@@ -1,0 +1,16 @@
+<div class="bloc2">
+          <div class="span-4">
+              <span class="date">{{post.date | date("F jS, Y")}}</span>
+          </div>
+          <div class="span-12">
+            <h2 class="title-bloc"><a href="{{ path('tp_blog_article', { 'id': post.id }) }}">{{post.title}}</a></h2>
+            <p class="description">{{ post.content | truncate(300, true, '...') }}<span class="links"><a href="{{ path('tp_blog_article', { 'id': post.id }) }}">Continue reading...</a></span></p>
+            <div class="footerbloc">
+              <p class="footer-bloc"><img src="/images/user.png"/> By <a href="{{ path('tp_blog_user', { 'id': post.user.id }) }}">{{post.user.name}}</a> in <a href="{{ path('tp_blog_categories', { 'id': post.categories.id }) }}">{{post.categories.title}}</a> with <span class="links-footer">3 comments</span></p>
+              <p class="share"><img src="/images/share.png"/><span class="links">Share</span></p>
+            </div>
+          </div>
+        </div>
+          <div class="separateur">
+            <hr>
+          </div>

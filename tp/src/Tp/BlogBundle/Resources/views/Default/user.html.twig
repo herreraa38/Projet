@@ -1,0 +1,26 @@
+{% extends 'TpBlogBundle::layout.html.twig' %}
+
+
+{% block title %} {{parent()}} My cool blog posts {% endblock %}
+
+{% block body %}
+<div id="containeur">
+    <div class="span-16">
+
+    
+        <div id="content">
+                <h2 class="title-bloc"> Post by {{user.name}}</h2>
+                <div  id="back">
+                    <span><a href="{{ path('tp_blog_homepage') }}">Back</a></span>
+                </div>
+
+                {% for post in user.posts %}
+
+               {% include 'TpBlogBundle:UI:post.html.twig' with {'post': post} %}
+
+                {% endfor %}
+        </div>
+            </div>
+        </div>
+    
+{% endblock %}

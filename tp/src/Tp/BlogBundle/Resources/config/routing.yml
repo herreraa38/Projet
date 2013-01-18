@@ -1,0 +1,30 @@
+tp_blog_homepage:
+    pattern:  /
+    defaults: { _controller: TpBlogBundle:Default:index }
+
+
+tp_blog_article:
+    pattern:  /article/{id}
+    defaults: { _controller: TpBlogBundle:Default:show }
+
+
+tp_blog_contact:
+    pattern:  /contact
+    defaults: { _controller: TpBlogBundle:Static:contact }
+
+tp_blog_categories:
+    pattern:  /categories/{id}
+    defaults: { _controller: TpBlogBundle:Default:categories }
+
+
+tp_blog_user:
+    pattern:  /user/{id}
+    defaults: { _controller: TpBlogBundle:Default:user }
+
+tp_blog_add:
+    pattern:  /add
+    defaults: { _controller: TpBlogBundle:Default:add }
+
+tp_admin:
+    pattern:  /admin/login
+    defaults: { _controller: TpAdmin2Bundle:Default:login }

@@ -1,0 +1,71 @@
+
+<div class="span-7 last">
+        <div id="col-droite">
+        
+        	<div class="bloc-col" id="social">
+        		<ul>
+        			<li><img src="/images/rss.png" alt="RSS"/>10,023</li>
+        			<li><img src="/images/facebook.png" alt="/twitter"/>7,508</li>
+        			<li><img src="/images/facebook.png" alt="Facebook"/>6,491</li>
+        		</ul>
+        	</div>
+        	
+        	<div class="bloc-col" id="search">
+        		<input name="search" type="text" placeholder="type your search and hit enter..."/>
+        	</div>
+        	
+				<div class="bloc-col" id="categories">
+	        		<h3>Categories</h3>
+	        		<ul class="list-cat">
+	        		{% for categories in categories %}
+					    <li class="li-cat"><a href="{{ path('tp_blog_categories', { 'id': categories.id }) }}">{{categories.title}}</a></li>
+					{% endfor %}
+						<li class="li-cat"><a href="#">View all...</a></li>
+					</ul>
+        		</div>
+        	
+        	
+        	<div class="bloc-col" id="categories">
+        		<h3>Archives <span>by</span> month</h3>
+        		<ul class="list-cat">
+	        		<li class="li-cat">April 2011</li>
+	        		<li class="li-cat">February 2011</li>
+	        		<li class="li-cat">January 2011</li>
+	        		<li class="li-cat">December 2010</li>
+	        		<li class="li-cat">October 2010</li>
+	        		<li class="li-cat">July 2010</li>
+        		</ul>
+        		<ul class="list-cat">
+	        		<li class="li-cat">August 2009</li>
+	        		<li class="li-cat">March 2009</li>
+	        		<li class="li-cat">February 2009</li>
+	        		<li class="li-cat">September 2009</li>
+	        		<li class="li-cat">April 2009</li>
+	        		<li class="li-cat">Further back...</li>
+        		</ul>
+        	</div>
+        	
+        	<div class="bloc-col" id="latest">
+        		<h3>Latest <span>on</span> flicklr</h3>
+        		<ul>
+        			<li class="latest-list"></li>        			
+        			<li class="latest-list"></li>
+        			<li class="latest-list"></li>
+        			<li class="latest-list"></li>
+        			<li class="latest-list"></li>
+        			<li class="latest-list"></li>
+        		</ul>
+        	</div>
+        	
+        	<div class="bloc-col" id="visit">
+        		<h3>Visit <span>our</span> sponsors</h3>
+        		<div id="sponsor"></div>
+        		<p>Praesent commodo cursus magna, consectetur et. Nullam id dolor ut id elit.</p>
+        	</div>
+        </div>
+    </div> 
+</div>
+     <div id="footer" class="span-24">
+        <p>© 2011 John Doe. All Rights Reserved.</p>
+    </div>
+</div>

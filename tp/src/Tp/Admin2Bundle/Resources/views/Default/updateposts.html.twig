@@ -1,0 +1,35 @@
+
+{% extends 'TpAdmin2Bundle::layout-blog.html.twig' %}
+
+
+{% block title %} {{parent()}} My cool blog posts {% endblock %}
+
+{% block body %}
+<div id="containeur">
+	<div class="span-16">
+
+	
+    	<div id="content">
+	    		<div  id="back">
+		        	<span><a href="{{ path('tp_admin2_homepage') }}">Back</a></span>
+		        </div>
+		        <form action="" method="post" {{ form_enctype(form) }}>
+					 {{ form_errors(form) }}
+
+	               {{ form_row(form.title) }}
+	               {{ form_row(form.categories) }}
+				   {{ form_row(form.user) }}
+				   {{ form_row(form.date) }}
+				   {{ form_row(form.content) }}
+
+				   {{ form_rest(form) }}
+				   <input type="submit" />
+				</form>
+			    <div class="separateur">
+			    	<hr>
+			    </div>
+	        </div>
+        </div>
+    </div>
+	
+{% endblock %}

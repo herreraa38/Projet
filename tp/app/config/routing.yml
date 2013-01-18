@@ -1,0 +1,12 @@
+tp_admin2:
+    resource: "@TpAdmin2Bundle/Resources/config/routing.yml"
+    prefix:   /
+
+tp_blog:
+    resource: "@TpBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal

@@ -1,0 +1,32 @@
+
+{% extends 'TpAdmin2Bundle::layout-blog.html.twig' %}
+
+
+{% block title %} {{parent()}} Modification de la Catégorie {% endblock %}
+
+{% block body %}
+<div id="containeur">
+	<div class="span-16">
+
+	
+    	<div id="content">
+	    		<div  id="back">
+		        	<span><a href="{{ path('tp_admin2_homepage') }}">Back</a></span>
+		        </div>
+		        <form action="" method="post" {{ form_enctype(form) }}>
+					 {{ form_errors(form) }}
+
+	               {{ form_row(form.id) }}
+	               {{ form_row(form.title) }}
+
+				   {{ form_rest(form) }}
+				   <input type="submit" />
+				</form>
+			    <div class="separateur">
+			    	<hr>
+			    </div>
+	        </div>
+        </div>
+    </div>
+	
+{% endblock %}

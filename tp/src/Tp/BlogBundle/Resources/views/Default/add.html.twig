@@ -1,0 +1,30 @@
+{% extends 'TpBlogBundle::layout.html.twig' %}
+
+
+{% block title %} {{parent()}} My cool blog posts {% endblock %}
+
+{% block body %}
+<div id="containeur">
+    <div class="span-16">
+
+    
+        <div id="content">
+			<form action="" method="post" {{ form_enctype(form) }}>
+				 {{ form_errors(form) }}
+
+               {{ form_row(form.title) }}
+               {{ form_row(form.categories) }}
+			   {{ form_row(form.user) }}
+			   {{ form_row(form.date) }}
+			   {{ form_row(form.content) }}
+
+			   {{ form_rest(form) }}
+			   <input type="submit" />
+			</form>
+        </div>
+            </div>
+        </div>
+    
+	
+
+{% endblock %}

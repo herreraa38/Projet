@@ -1,0 +1,42 @@
+tp_admin_categories:
+    pattern:  /categories/{id}
+    defaults: { _controller: TpAdmin2Bundle:Default:categories }
+
+tp_admin2_homepage:
+    pattern:  /admin/login
+    defaults: { _controller: TpAdmin2Bundle:Default:index }
+
+categories:
+    pattern:  /admin/categories/
+    defaults: { _controller: TpAdmin2Bundle:Default:gestionCategories }
+
+tp_admin_article_update:
+    pattern:  /admin/article/update/{id}
+    defaults: { _controller: TpAdmin2Bundle:Default:updateposts }
+tp_admin_categorie_update:
+    pattern:  /admin/categories/update/{id}
+    defaults: { _controller: TpAdmin2Bundle:Default:updatecategories }
+tp_admin_categorie_suppression:
+    pattern:  /admin/categories/suppression/{id}
+    defaults: { _controller: TpAdmin2Bundle:Default:suppressionCategories }
+tp_admin_articles_suppression:
+    pattern:  /admin/articles/suppression/{id}
+    defaults: { _controller: TpAdmin2Bundle:Default:suppressionArticles }
+
+tp_admin2_manage:
+    pattern:  /admin/manage
+    defaults: { _controller: TpAdmin2Bundle:Default:manage }
+
+redirection_add:
+    pattern:  /admin/add
+    defaults: { _controller: TpAdmin2Bundle:Default:addposts }
+
+tp_admin2_posts_add:
+    pattern:  /admin/add
+    defaults: { _controller: TpAdmin2Bundle:Default:addposts }
+tp_admin2_posts_delete:
+    pattern:  /admin/article
+    defaults: { _controller: TpAdmin2Bundle:Default:deleteposts }
+tp_admin2_posts_update:
+    pattern:  /admin/update
+    defaults: { _controller: TpAdmin2Bundle:Default:updateposts }

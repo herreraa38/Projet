@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+  	<title>{% block title %} Test application{% endblock %}</title>
+	<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">  
+	<!--[if IE]>
+	<link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+	<![endif]-->
+	<!--[if IE]>
+	<link rel="stylesheet" href="/css/blueprint/ie.css" media="screen, projection">
+	<![endif]-->
+  </head>
+  
+  <body>
+  <div class="container">
+  
+    <div id="header" class="span-24">
+      <a href="{{ path('tp_admin') }}" title="Log In">Log In</a>
+        <ul>
+        	<li class="first"><a href="{{ path('tp_blog_homepage') }}" title="home">home</a></li>
+        	<li><a href="#" title="about">about</a></li>
+        	<li class="logo"><a href="{{ path('tp_blog_homepage') }}" title="logo"><img src="/images/logo.png" alt="logo"/></a></li>
+        	<li><a href="#" title="archive">archive</a></li>
+        	<li><a href="{{ path('tp_blog_contact') }}" title="email">email</a></li>
+        </ul>
+    </div>
+
+{% block body %}
+
+	
+{% endblock %}
+
+{% render "TpBlogBundle:Default:sidebar" %}
+
+  
+  </body>
+</html>
